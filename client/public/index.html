@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/smallLogo.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="apple-touch-icon" href="/smallLogo.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kreta A Modern Ecommerce fashion store</title>
+    <script defer="defer" src="/static/js/main.9f14d841.js"></script>
+    <link href="/static/css/main.6dfb287f.css" rel="stylesheet" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" id="close">&times;</span>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with our latest Trends and offers.</p>
+        <input type="email" placeholder="Enter your email" id="email" />
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+    </div>
+    <script>
+      // Get the pop-up and close button elements
+      const popup = document.getElementById("popup");
+      const closeButton = document.getElementById("close");
+
+      // Function to show the pop-up
+      function openPopup() {
+        popup.style.display = "block";
+      }
+
+      // Function to close the pop-up
+      function closePopup() {
+        popup.style.display = "none";
+      }
+
+      // Function to subscribe (you can replace this with your own subscription logic)
+      function subscribe() {
+        const email = document.getElementById("email").value;
+        if (email) {
+          alert(`Successfull and you are the part: ${email}`);
+          closePopup();
+        } else {
+          alert("Please enter a valid email address.");
+        }
+      }
+
+      // Show the pop-up when the page loads
+      window.onload = openPopup;
+
+      // Close the pop-up when the close button is clicked
+      closeButton.addEventListener("click", closePopup);
+
+      // Close the pop-up when the user clicks outside the pop-up
+      window.addEventListener("click", (event) => {
+        if (event.target === popup) {
+          closePopup();
+        }
+      });
+    </script>
+  </body>
+</html>

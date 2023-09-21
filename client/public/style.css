@@ -1,0 +1,51 @@
+/* Styles for the pop-up container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 100px;
+   left: 31%;;
+    width: 40%;
+    height: 50%;
+    
+   
+}
+
+/* Styles for the pop-up content */
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Input and button styles */
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #937197;
+    padding: 10px 20px;
+}

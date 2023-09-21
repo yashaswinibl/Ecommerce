@@ -1,0 +1,11 @@
+{
+  "name": "kreta",
+  "version": "1.0.0",
+  "description": "Ecommerce fashion store",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run "
+  },
+  "author": "Yashaswini B L",
+  "license": "ISC"
+}
